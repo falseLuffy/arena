@@ -7,7 +7,9 @@
 </head>
 <body>
 <p>我是谁：前端从业者</p>
-<%= val%>
+<% val.forEach((v)=>{ %>
+<p><%= JSON.stringify(v) %></p>
+<% }) %>
 <p></p>
 </body>
 </html>

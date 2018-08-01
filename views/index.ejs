@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>arena</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
-    <link rel="hortcut icon"  href="/images/favicon.ico">
-</head>
-<body>
-<p>我是谁：前端从业者</p>
-<% val.forEach((v)=>{ %>
+<% include header.ejs %>
+<link rel="stylesheet" href="stylesheets/index.css">
+<div class="content-wrap">
+    <div class="text-wrap">
+        <p>我是谁：前端从业者；</p>
+        <p>前端技术努力探索者;</p>
+        <p>一个审美不咋地的frondender;</p>
+        <p>赖癌重症患者，不知道怎么设计博客者</p>
+    </div>
+</div>
+<!--<% val.forEach((v)=>{ %>
 <p><%= JSON.stringify(v) %></p>
-<% }) %>
-<p></p>
-</body>
-</html>
+<% }) %>-->
+<% include footer.ejs %>
+

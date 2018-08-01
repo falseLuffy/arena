@@ -10,5 +10,8 @@ router.get('/', function (req, res, next) {
       res.render('index', {title: 'Express',val});
    })
 });
+router.get('/admin',function (req, res) {
+   res.render('admin',{name:"dada"})
+})
 
 module.exports = router;

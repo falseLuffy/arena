@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "supervisor  ./bin/www",
-    "forever":"forever start ./bin/www"
+    "forever":"yarn && forever start ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

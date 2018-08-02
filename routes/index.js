@@ -10,8 +10,10 @@ router = router.get('/', function (req, res, next) {
       res.render('index', {val});
    })
 });
-router= router.get('/admin',function (req, res) {
-   res.render('index',{val:[]})
-})
+router= router.get('/blog',function (req, res) {
+   findAll().then((lists)=>{
+      res.render('blog',{lists})
+   })
+});
 
 module.exports = router;

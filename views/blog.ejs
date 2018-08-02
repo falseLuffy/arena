@@ -1,0 +1,7 @@
+<% include header.ejs %>
+<div>
+    <% lists.forEach((list)=>{ %>
+    <p> <%= JSON.stringify(list) %></p>
+    <% }) %>
+</div>
+<% include footer.ejs %>

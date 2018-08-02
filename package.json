@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "supervisor  ./bin/www",
-    "deploy": "git pull && yarn && forever start ./bin/www",
+    "deploy": "forever stopall && git pull && yarn && forever start ./bin/www",
     "debugger":"node $NODE_DEBUG_OPTION ./bin/www"
   },
   "dependencies": {

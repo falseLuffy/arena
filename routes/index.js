@@ -7,11 +7,11 @@ let findAll = require('../mongodb/findAll');
 /* GET home page. */
 router.get('/', function (req, res, next) {
    findAll().then((val) => {
-      res.render('index', {title: 'Express',val});
+      res.render('index', {val});
    })
 });
 router.get('/admin',function (req, res) {
-   res.render('admin',{name:"dada"})
+   res.render('index',{val:[]})
 })
 
 module.exports = router;

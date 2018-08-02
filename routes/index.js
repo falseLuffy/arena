@@ -1,5 +1,6 @@
 let express = require('express');
 let router = express.Router();
+let markdown = require('markdown').markdown
 
 let findAll = require('../mongodb/findAll');
 
@@ -12,6 +13,9 @@ router = router.get('/', function (req, res, next) {
 });
 router= router.get('/blog',function (req, res) {
    findAll().then((lists)=>{
+      lists.forEach((list)=>{
+         list.content = markdown.toHTML(list.content||'');
+      })
       res.render('blog',{lists})
    })
 });

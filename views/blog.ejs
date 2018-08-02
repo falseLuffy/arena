@@ -1,7 +1,22 @@
 <% include header.ejs %>
-<div>
+<style>
+    #content{
+        padding:0 30px;
+    }
+    img{
+        width:100%;
+    }
+</style>
+<div style="overflow: auto" id="content">
     <% lists.forEach((list)=>{ %>
-    <p> <%= JSON.stringify(list) %></p>
+    <h4 class="titile"> <%= list.title %></h4>
+    <p><span class="author"><%= list.author %></span></p>
+    <%- list.content %>
     <% }) %>
 </div>
+<script>
+    let content = document.getElementById('content');
+    let parantHeight = document.body.getClientRects()[0].height;
+    content.style.height = parantHeight +'px';
+</script>
 <% include footer.ejs %>

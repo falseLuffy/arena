@@ -192,6 +192,10 @@ ipaddr.js@1.8.0:
   version "1.8.0"
   resolved "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.8.0.tgz#eaa33d6ddd7ace8f7f6fe0c9ca0440e706738b1e"
 
+js-base64@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.npmjs.org/js-base64/-/js-base64-2.4.8.tgz#57a9b130888f956834aa40c5b165ba59c758f033"
+
 markdown@^0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/markdown/-/markdown-0.5.0.tgz#28205b565a8ae7592de207463d6637dc182722b2"

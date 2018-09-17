@@ -2,31 +2,33 @@
 <link rel="stylesheet" href="stylesheets/index.css">
 <style>
     .content-wrap {
-        margin-top: 40px;
         overflow: auto;
     }
 
-
-
     .content-wrap .main .sheets {
         height: 100%;
+        border-top:1px solid transparent;
     }
-
     .content-wrap .main .sheets.s1 {
         background-image: url(<%= backImage %>);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    .content-wrap .main .sheets.s1 .wrap{
+        margin:100px 0 0 100px;
+    }
 </style>
 <div class="content-wrap" id="body">
     <% include header.ejs %>
     <div class="main">
         <div class="sheets s1">
-            <p>我是谁：前端从业者；</p>
-            <p>前端技术努力探索者;</p>
-            <p>一个审美不咋地的frondender;</p>
-            <p>赖癌重症患者，不知道怎么设计博客者</p>
+            <div class="wrap">
+                <p>我是谁：前端从业者；</p>
+                <p>前端技术努力探索者;</p>
+                <p>一个审美不咋地的frondender;</p>
+                <p>赖癌重症患者，不知道怎么设计博客者</p>
+            </div>
         </div>
         <div class="sheets s1">
             <p>我是谁：前端从业者；</p>

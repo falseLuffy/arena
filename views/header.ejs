@@ -5,6 +5,8 @@
         left: 0;
         width: 100%;
         background: #f3f6f9;
+        overflow: hidden;
+        height:0;
     }
 
     .content-wrap .header .header-wrapper {
@@ -39,7 +41,7 @@
         color: #ff4081
     }
 </style>
-<div class="header">
+<div class="header" id="header">
     <div class="header-wrapper">
         <ul class="menu">
             <li class="menu-item"><a href="/blog" class="text">博文</a></li>
@@ -48,3 +50,15 @@
         </ul>
     </div>
 </div>
+<script>
+   let header = document.getElementById('header')
+   document.getElementById('body').addEventListener('scroll', function (event) {
+      if (this.scrollTop > 100) {
+         header.style.height = '40px'
+      }
+      else {
+         header.style.height = 0;
+
+      }
+   })
+</script>

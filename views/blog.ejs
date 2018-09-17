@@ -1,4 +1,4 @@
-<% include header.ejs%>
+<% include construction-header.ejs%>
 <style>
     #content{
         padding:0 30px;
@@ -10,6 +10,7 @@
 </style>
 <div id="content">
     <h4><%- blog.title %></h4>
+    <p><%= blog.create_time %></p>
     <div><%- blog.content %></div>
 </div>
 <script>
@@ -18,4 +19,4 @@
    content.style.height = parantHeight +'px';
 </script>
 
-<% include footer.ejs%>
+<% include construction-footer.ejs%>

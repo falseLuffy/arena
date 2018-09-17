@@ -1,14 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>arena</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/reset.css'/>
-    <link rel='stylesheet' href='/stylesheets/initial.css'/>
-    <link rel="hortcut icon"  href="/images/favicon.ico">
+<style>
+    .content-wrap .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #f3f6f9;
+    }
 
-    <link rel="stylesheet" href="/stylesheets/material.min.css">
-    <script src="/javascripts/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
+    .content-wrap .header .header-wrapper {
+        margin: 0 200px;
+    }
+
+    .content-wrap .header .header-wrapper .menu {
+        float: right;
+    }
+
+    .content-wrap .header .header-wrapper::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .content-wrap .header .header-wrapper .menu .menu-item {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .content-wrap .header .header-wrapper .menu .menu-item .text {
+        vertical-align: top;
+        line-height: 40px;
+        height: 40px;
+        color: #666;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .content-wrap .header .header-wrapper .menu .menu-item .text:hover {
+        color: #ff4081
+    }
+</style>
+<div class="header">
+    <div class="header-wrapper">
+        <ul class="menu">
+            <li class="menu-item"><a href="/blog" class="text">博文</a></li>
+            <li class="menu-item"><a href="" class="text">实验室</a></li>
+            <li class="menu-item"><a href="" class="text">猜想</a></li>
+        </ul>
+    </div>
+</div>

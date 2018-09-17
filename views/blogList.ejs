@@ -1,4 +1,4 @@
-<% include header.ejs %>
+<% include construction-header.ejs %>
 <style>
     #content{
         padding:0 30px;
@@ -7,7 +7,8 @@
         width:100%;
     }
 </style>
-<div style="overflow: auto" id="content">
+<div class="content-wrap" style="overflow: auto" id="content">
+    <% include header.ejs %>
     <% lists.forEach((list)=>{ %>
     <h4 class="titile"><a href="/blog/<%= list._id %>"><%= list.title %></a></h4>
     <p><span class="author"><%= list.author %></span></p>
@@ -18,4 +19,4 @@
     let parantHeight = document.body.getClientRects()[0].height;
     content.style.height = parantHeight +'px';
 </script>
-<% include footer.ejs %>
+<% include construction-footer.ejs %>

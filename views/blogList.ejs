@@ -8,7 +8,7 @@
     }
 </style>
 <div class="content-wrap" style="overflow: auto" id="content">
-    <% include header.ejs %>
+    <%- include('header.ejs',{height:"40px",type:'auto'}) %>
     <% lists.forEach((list)=>{ %>
     <h4 class="titile"><a href="/blog/<%= list._id %>"><%= list.title %></a></h4>
     <p><span class="author"><%= list.author %></span></p>
